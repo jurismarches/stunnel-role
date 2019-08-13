@@ -1,5 +1,7 @@
-pid=/var/run/stunnel.pid
-output = /var/log/stunnel.log
+pid=/var/run/stunnel4/stunnel.pid
+setuid = stunnel4
+setgid = stunnel4
+output = /var/log/stunnel4/stunnel.log
 
 {% if stunnel_use_certificate %}
 cert=/etc/stunnel/stunnel.pem
